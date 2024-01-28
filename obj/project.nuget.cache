@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "LABL5vRMadcR4JdTXfvqsrBgGEz06DGEUPX2rD1jJRxOv/RnUDUShAXk8BAxl7lQ3y0z4NH6vNWiCCJPfXggVQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\source\\repos\\Gold Gym System\\Gold Gym System.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\devexpress.data\\23.2.3\\devexpress.data.23.2.3.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.4\\microsoft.netcore.platforms.3.1.4.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.drawing.common\\4.7.2\\system.drawing.common.4.7.2.nupkg.sha512"
+  ],
+  "logs": []
+}

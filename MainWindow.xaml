@@ -1,0 +1,70 @@
+﻿<Window x:Class="Gold_Gym_System.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Gold_Gym_System"
+        mc:Ignorable="d"
+        xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid" xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <local:TabSizeConverter x:Key="tabSizeConverter"/>
+        <Style TargetType="{x:Type TabItem}">
+            <Setter Property="Width">
+                <Setter.Value>
+                    <MultiBinding Converter="{StaticResource tabSizeConverter}">
+                        <Binding RelativeSource="{RelativeSource Mode=FindAncestor,
+            AncestorType={x:Type TabControl}}" />
+                        <Binding RelativeSource="{RelativeSource Mode=FindAncestor,
+            AncestorType={x:Type TabControl}}" Path="ActualWidth" />
+                    </MultiBinding>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF151201" Offset="0.51"/>
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="Black" Offset="0.707"/>
+                <GradientStop Color="Black" Offset="0.227"/>
+                <GradientStop Color="Black" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TabControl>
+            <TabControl.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0.013"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </TabControl.Background>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5">
+                    <!-- Your content here -->
+                </Grid>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="13*"/>
+                        <RowDefinition Height="190*"/>
+                    </Grid.RowDefinitions>
+                    <Rectangle HorizontalAlignment="Left" Height="100" Margin="315,41,0,0" Grid.Row="1" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="22*"/>
+                        <ColumnDefinition Width="159*"/>
+                        <ColumnDefinition Width="216*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+
+    </Grid>
+</Window>
